@@ -1,11 +1,19 @@
 ====================================================================
-LEDGERPULSE v2.0 — USER TESTING & DEVICE EXCHANGE GUIDE
+LEDGERPULSE v3.0 — USER TESTING, CLOUD SYNC & DEVICE EXCHANGE GUIDE
 ====================================================================
 
-Thank you for testing LedgerPulse 2.0 (with Pulse AI Agent)!
+Thank you for testing LedgerPulse 3.0 (Cross-Platform Auth, LWW Sync & Pulse AI)!
 
-1. WHAT IS INCLUDED
--------------------
+1. WHAT IS INCLUDED IN v3.0
+---------------------------
+- Cross-Platform User Accounts & Last-Write-Wins (LWW) Cloud Sync:
+  * Click "Account / Sync" in the top bar to sign up or sign in via
+    Email/Password, Google OAuth, or GitHub OAuth.
+  * Automatically attaches all local profiles, categories, transactions,
+    and shopping lists to your authenticated User UUID.
+  * Syncs across Desktop (Linux/Windows) and Mobile (Android APK) via
+    either the Built-in REST/LAN Sync Hub or Supabase Cloud (Postgres RLS)
+    with deterministic UTC Last-Write-Wins conflict resolution.
 - Interactive Pulse AI Financial Agent:
   * Click "Pulse AI" in the top bar or "Ask Pulse AI" floating button to
     analyze your budget, log expenses in natural language, build itemized
@@ -17,16 +25,10 @@ Thank you for testing LedgerPulse 2.0 (with Pulse AI Agent)!
 - Local Receipt Scanner & OCR:
   * Drag & drop receipt images or click one of the 4 built-in sample
     receipts to auto-extract Merchant, Date, Total, Tax, and Category.
-- Inter-Profile Transfers:
-  * Transfer funds or weekly allowances between profiles with 1 click.
-- Device-to-Device Backup & Spreadsheet Export:
-  * Click "Backup / Export" in the top bar to export/import a full
-    .json database bundle across devices, download .csv spreadsheets,
-    or click "Reset & Load Fresh Demo Data" to restart your test session.
 
 2. HOW TO RUN ON WINDOWS
 ------------------------
-- Extract "LedgerPulse-2.0-win-x64-portable.zip" to any folder.
+- Extract "LedgerPulse-3.0-win-x64-portable.zip" to any folder.
 - Double-click "Launch-LedgerPulse-Desktop.vbs" (opens in a dedicated
   standalone desktop app window without browser tabs) OR double-click
   "Start-LedgerPulse.bat".
@@ -36,10 +38,10 @@ Thank you for testing LedgerPulse 2.0 (with Pulse AI Agent)!
 3. HOW TO RUN ON LINUX
 ----------------------
 Option A (Portable tar.gz):
-  tar -xzf LedgerPulse-2.0-linux-x64.tar.gz
-  cd LedgerPulse-2.0-linux-x64
+  tar -xzf LedgerPulse-3.0-linux-x64.tar.gz
+  cd LedgerPulse-3.0-linux-x64
   ./start-ledgerpulse.sh
 
 Option B (Debian / Ubuntu .deb package):
-  sudo dpkg -i LedgerPulse-2.0_amd64.deb
+  sudo dpkg -i LedgerPulse-3.0_amd64.deb
   ledgerpulse
