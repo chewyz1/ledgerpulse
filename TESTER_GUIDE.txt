@@ -1,0 +1,41 @@
+====================================================================
+LEDGERPULSE v1.0.0 — USER TESTING & DEVICE EXCHANGE GUIDE
+====================================================================
+
+Thank you for testing LedgerPulse!
+
+1. WHAT IS INCLUDED
+-------------------
+- Multi-Profile Isolated Accounts:
+  * Personal Budget (Household income, rent, groceries, utilities)
+  * Business & Consulting (Tax-deductible expenses, SaaS, client revenue)
+  * Child's Account (Weekly allowance, gifts, toys, youth savings)
+- Local Receipt Scanner & OCR:
+  * Drag & drop receipt images or click one of the 4 built-in sample
+    receipts to auto-extract Merchant, Date, Total, Tax, and Category.
+- Inter-Profile Transfers:
+  * Transfer funds or weekly allowances between profiles with 1 click.
+- Device-to-Device Backup & Spreadsheet Export:
+  * Click "Backup / Export" in the top bar to export/import a full
+    .json database bundle across devices, download .csv spreadsheets,
+    or click "Reset & Load Fresh Demo Data" to restart your test session.
+
+2. HOW TO RUN ON WINDOWS
+------------------------
+- Extract "LedgerPulse-1.0.0-win-x64-portable.zip" to any folder.
+- Double-click "Launch-LedgerPulse-Desktop.vbs" (opens in a dedicated
+  standalone desktop app window without browser tabs) OR double-click
+  "Start-LedgerPulse.bat".
+- Prerequisite: Node.js v22.5+ installed on the test machine (uses
+  Node's built-in zero-dependency SQLite engine).
+
+3. HOW TO RUN ON LINUX
+----------------------
+Option A (Portable tar.gz):
+  tar -xzf LedgerPulse-1.0.0-linux-x64.tar.gz
+  cd LedgerPulse-1.0.0-linux-x64
+  ./start-ledgerpulse.sh
+
+Option B (Debian / Ubuntu .deb package):
+  sudo dpkg -i ledgerpulse_1.0.0_amd64.deb
+  ledgerpulse
