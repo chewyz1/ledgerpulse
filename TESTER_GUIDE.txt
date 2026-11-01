@@ -1,11 +1,15 @@
 ====================================================================
-LEDGERPULSE v1.0.0 — USER TESTING & DEVICE EXCHANGE GUIDE
+LEDGERPULSE v2.0 — USER TESTING & DEVICE EXCHANGE GUIDE
 ====================================================================
 
-Thank you for testing LedgerPulse!
+Thank you for testing LedgerPulse 2.0 (with Pulse AI Agent)!
 
 1. WHAT IS INCLUDED
 -------------------
+- Interactive Pulse AI Financial Agent:
+  * Click "Pulse AI" in the top bar or "Ask Pulse AI" floating button to
+    analyze your budget, log expenses in natural language, build itemized
+    shopping lists, transfer funds, or attach receipt images.
 - Multi-Profile Isolated Accounts:
   * Personal Budget (Household income, rent, groceries, utilities)
   * Business & Consulting (Tax-deductible expenses, SaaS, client revenue)
@@ -22,7 +26,7 @@ Thank you for testing LedgerPulse!
 
 2. HOW TO RUN ON WINDOWS
 ------------------------
-- Extract "LedgerPulse-1.0.0-win-x64-portable.zip" to any folder.
+- Extract "LedgerPulse-2.0-win-x64-portable.zip" to any folder.
 - Double-click "Launch-LedgerPulse-Desktop.vbs" (opens in a dedicated
   standalone desktop app window without browser tabs) OR double-click
   "Start-LedgerPulse.bat".
@@ -32,10 +36,10 @@ Thank you for testing LedgerPulse!
 3. HOW TO RUN ON LINUX
 ----------------------
 Option A (Portable tar.gz):
-  tar -xzf LedgerPulse-1.0.0-linux-x64.tar.gz
-  cd LedgerPulse-1.0.0-linux-x64
+  tar -xzf LedgerPulse-2.0-linux-x64.tar.gz
+  cd LedgerPulse-2.0-linux-x64
   ./start-ledgerpulse.sh
 
 Option B (Debian / Ubuntu .deb package):
-  sudo dpkg -i ledgerpulse_1.0.0_amd64.deb
+  sudo dpkg -i LedgerPulse-2.0_amd64.deb
   ledgerpulse
